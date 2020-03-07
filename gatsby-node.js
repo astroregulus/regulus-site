@@ -17,6 +17,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
               edges {
                 node {
                   id
+                  curso_id
                   descricao
                   nome
                 }
@@ -29,8 +30,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     const cursoTemplate = path.resolve(`src/templates/curso.js`)
 
     result.data.allCursosJson.edges.forEach(edge => {
-        console.log(edge)
-        console.log(edge.node.nome)
         // Gatsby uses Redux to manage its internal state.
         // Plugins and sites can use functions like "createPage"
         // to interact with Gatsby.
@@ -39,7 +38,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           // as a template component. The `context` is
           // optional but is often necessary so the template
           // can query data specific to each page.
-          path: `/cursos/${edge.node.id}/`,
+          path: `/cursos/${edge.node.curso_id}/`,
           component: slash(cursoTemplate),
           context: {
             id: edge.node.id,
