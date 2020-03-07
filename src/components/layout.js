@@ -7,14 +7,16 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { library } from '@fortawesome/fontawesome-svg-core'
+import { config, library } from '@fortawesome/fontawesome-svg-core'
 import { fab, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faCalendarAlt, faClock, faChalkboardTeacher, faArrowCircleRight, faBars , faTimes} from '@fortawesome/free-solid-svg-icons'
 
 import Header from "./header"
 import "./layout.css"
+import "@fortawesome/fontawesome-svg-core/styles.css"
 import Footer from "./footer"
 
+config.autoAddCss = false
 library.add(fab, faInstagram, faCalendarAlt, faClock, faChalkboardTeacher, faArrowCircleRight, faBars, faTimes);
 
 
