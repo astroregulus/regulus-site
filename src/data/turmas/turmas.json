@@ -1,12 +1,12 @@
 [{
-    "curso_id": "int1",
+    "curso_id": "tradicional/modulo1",
     "nome": "Astrologia Tradicional - módulo I Fundamentos",
     "data": "04/03/2020",
     "prof": "Henrique G. Wiederspahn",
     "horario": "14h30 às 16h30"
 },
 {
-    "curso_id": "int1",
+    "curso_id": "cartografia-localizacao",
     "nome": "Astro-Cartografia e Astro-Localização: O melhor lugar para estar.",
     "data": "04/03/2020",
     "prof": "Henrique G. Wiederspahn",
@@ -20,7 +20,7 @@
     "horario": "20h00 às 22h00"
 },
 {
-    "id": "int2",
+    "curso_id": "carmica",
     "nome": "Astrologia Cármica",
     "data": "06/03/2020",
     "prof": "Leonardo Lemos",

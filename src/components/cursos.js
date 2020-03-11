@@ -16,6 +16,7 @@ const Cursos = () => {
                 edges {
                     node {
                         id
+                        curso_id
                         nome
                         horario
                         prof
