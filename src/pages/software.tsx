@@ -1,32 +1,30 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import pegasus from "../images/peg-Banner-photon.gif";
 import "./software.css"
 
 export default function SoftwarePage() {
   return (
   <Layout>
     <SEO title="Software Astrológico: Pegasus" />
-    <div style={{"display" : "flex"}}>
-      <img src={pegasus} />
-      <div style={{"marginLeft":"10px"}}>
-        <h4> Novidades da versão Photon SE</h4>
-        <ul style={{"listStyle":"none", "fontSize":"12px", "marginLeft":"0"}}>
-          <li>Efemérides com a excepcional precisão de 0.001"</li>
-          <li>Calcula posições dos planetas, pontos, asteróides e uranianos.</li>
-          <li>Impressão de mandalas coloridas configuráveis pelo usuário.</li>
-          <li>Impressão dos graus dos planetas no mapa.</li>
-          <li>Arquivamento dos dados da retificação de hora.</li>
-          <li>Configuração das orbes de aspectos por planeta.</li>
-        </ul>
-      </div>
-    </div>
+
+   
     
     <p>Conheça o programa de astrologia Pegasus em sua nova versão Photon SE 9.0</p>
     <p>A melhor forma é utilizar a versão deste programa de Astrologia na sua forma completa por 15 dias, siga as instruções e solicite seu programa, clicando em:</p>
     <p> >>> quero conhecer o novo Pegasus Photon SE </p>
     <br />
+
+    <h4> Novidades da versão Photon SE</h4>
+    <ul style={{"listStyle":"none"}}>
+      <li>Efemérides com a excepcional precisão de 0.001"</li>
+      <li>Calcula posições dos planetas, pontos, asteróides e uranianos.</li>
+      <li>Impressão de mandalas coloridas configuráveis pelo usuário.</li>
+      <li>Impressão dos graus dos planetas no mapa.</li>
+      <li>Arquivamento dos dados da retificação de hora.</li>
+      <li>Configuração das orbes de aspectos por planeta.</li>
+    </ul>
+
 
     <h2>Opções e características do Pegasus Photon SE</h2>
     <h3>Efetua dezenas de cálculos astrológicos, dentre os quais destacam-se:</h3>
