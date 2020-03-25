@@ -31,7 +31,12 @@ const Cursos = () => {
         <h2>Turmas abertas</h2>
         <div style={estiloCursos}>
             { data.allTurmasJson.edges.map( ({node}) => {
-                return <Card key={`${node.id}${node.date}`} title={node.nome} date={node.data} teacher={node.prof} time={node.horario} id={node.curso_id}/>
+                return <Card  key={`${node.id}${node.date}`} 
+                              title={node.nome} 
+                              date={node.data} 
+                              teacher={node.prof} 
+                              time={node.horario} 
+                              id={node.curso_id}/>
             }) }
         </div>
     </div>  )
