@@ -1,0 +1,39 @@
+.card {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.30), 0 3px 6px rgba(0,0,0,0.30);
+}
+
+p {
+    margin-bottom: unset;
+}
+
+.main {
+    padding: 20px;
+}
+
+.cardBottom {
+    border-top: 1px solid #DDD;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.link {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  color: white;
+  text-decoration: none;
+  background-color: #C47322;
+  margin: auto;
+  padding: 5px 10px;
+}
+
+.link:hover {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.30), 0 3px 6px rgba(0,0,0,0.30);
+}
+

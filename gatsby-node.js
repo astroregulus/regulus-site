@@ -39,7 +39,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           // can query data specific to each page.
           path: edge.node.frontmatter.path,
           component: slash(cursoTemplate),
-          context: {},
+          context: {
+            curso_id: edge.node.frontmatter.path.replace("/cursos/","")
+          },
         })
       })
 }
