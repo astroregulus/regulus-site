@@ -1,7 +1,7 @@
 import * as PropTypes from "prop-types"
 import React from "react"
 import Layout from "../components/layout"
-import MiniCard from "../components/mini-card"
+import Card from "../components/card"
 import SEO from "../components/seo"
 import { graphql } from "gatsby"
 
@@ -26,12 +26,13 @@ export default function CursoTemplate({
           <h2>Turmas</h2>
           <div style={{"display": "flex", "flex-wrap" : "wrap", "justify-content": "space-around"}}>
             {turmas.map(({node}) => {
-                return <MiniCard  key={`${node.id}${node.date}`}
+                return <Card  key={`${node.id}${node.date}`}
                                   title={node.nome}
                                   date={node.data} 
                                   teacher={node.prof} 
                                   time={node.horario} 
-                                  id={node.curso_id}/>
+                                  id={node.curso_id}
+                                  layout="mini-card"/>
             })}
           </div>
         </div>

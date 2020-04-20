@@ -1,11 +1,17 @@
-.card {
+.container.card {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     width: 300px;
     margin-bottom: 10px;
     height: 310px;
 }
 
-.card:hover {
+.container.miniCard {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+.container:hover {
     box-shadow: 0 3px 6px rgba(0,0,0,0.30), 0 3px 6px rgba(0,0,0,0.30);
 }
 
@@ -13,10 +19,14 @@ p {
     margin-bottom: unset;
 }
 
-.main {
+.main.card{
     padding: 20px;
     height: 80%;
     cursor: pointer;
+}
+
+.main.miniCard {
+  padding: 20px;
 }
 
 .cardBottom {
