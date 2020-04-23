@@ -1,17 +1,16 @@
-import React from "react"
+import React, { CSSProperties } from "react"
 import { navigate } from "gatsby"
 import styles from "./card-image.module.css" 
-import livraria from "../images/livraria.jpg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 interface Props {
-    image,
+    image: any,
     text: string,
     title: string,
     navigateTo: string
 }
 
-const estiloDiv = {
+const estiloDiv: Partial<CSSProperties> = {
     backgroundColor: "#011830",
     opacity: "0.8",
     position: "absolute",

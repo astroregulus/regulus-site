@@ -1,0 +1,25 @@
+.professorContainer {
+  border: solid 1px #DDD;
+  margin-bottom: 10px;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: auto 2fr;
+  grid-template-rows: auto 1fr;
+  column-gap: 10px;
+  background-color: #DDD;
+}
+
+.professorNome {
+  grid-column-end : span 2;
+}
+
+.professorBio {
+  background-color: white;
+}
+
+.professorFoto {
+  width: 100px;
+  height: 100px;
+  border: solid 1px red;
+  background-color: white;
+}
