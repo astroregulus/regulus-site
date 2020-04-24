@@ -6,7 +6,6 @@
   grid-template-columns: auto 2fr;
   grid-template-rows: auto 1fr;
   column-gap: 10px;
-  background-color: #DDD;
 }
 
 .professorNome {
