@@ -1,6 +1,7 @@
 [{
-  "nome" : "Pessoa tem sobrenome",
-  "bio" : "bla bla bla"
+  "nome" : "Arthur Fücher",
+  "bio" : "Formado na FATEC-SP, faz lives na twitch para passar vergonha com todo mundo vendo",
+  "foto" : "afucher.jpg"
 },{
   "nome" : "Pessoa2"
 }]

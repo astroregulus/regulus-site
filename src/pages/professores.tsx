@@ -5,14 +5,21 @@ import styles from "./professores.module.css"
 import { graphql } from "gatsby"
 
 
+const getImage = (edges: any[], photoFile: string) : string => {
+  const index = edges.findIndex( 
+   ({node}: any) => `${node.name}${node.ext}` === photoFile);
+  return index < 0 ? "" : edges[index].node.childImageSharp.resize.src;
+}
+
 const ProfessoresPage = ({data} : any) => {
   const professores = data.allProfessoresJson.edges;
+  const fotos = data.allFile.edges;
 
   return  <Layout>
             <SEO title="Profesores" />
             <h1>Professores da Escola</h1>
             {professores.map(({node}: any) => 
-              <Professor key={node.id} {...node}/>
+              <Professor key={node.id} {...node} foto={getImage(fotos, node.foto)}/>
               )}
           </Layout>
 };
@@ -21,13 +28,14 @@ const ProfessoresPage = ({data} : any) => {
 interface ProfessorProps {
   nome: string
   bio: string
+  foto: string
 }
 
-const Professor = ({nome, bio}: ProfessorProps) => {
+const Professor = ({nome, bio, foto}: ProfessorProps) => {
   return  <div className={styles.professorContainer}>
             <h2 className={styles.professorNome}>{nome}</h2>
             <div className={styles.professorFoto}>
-              <img src="." alt=""/>
+              <img src={foto} alt=""/>
             </div>
             <p className={styles.professorBio}>{bio}</p>
           </div> 
@@ -44,8 +52,25 @@ export const query = graphql`
           id
           nome
           bio
+          foto
+        }
+      }
+    }
+    allFile(filter: {relativeDirectory: {eq: "professores"}, extension: {eq: "jpg"}}) {
+      edges {
+        node {
+          childImageSharp {
+            resize(width: 100) {
+              src
+            }
+          }
+          name
+          ext
         }
       }
     }
   }
 `
+
+
+
