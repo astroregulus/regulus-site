@@ -51,7 +51,7 @@ const IndexPage = ({ data }) => {
 export default IndexPage
 
 const getImage = (edges, src) => {
-  const index = edges.findIndex( seila => seila.node.resize.originalName == src);
+  const index = edges.findIndex( image => image.node.resize.originalName == src);
   return edges[index].node.resize.src;
 }
 
