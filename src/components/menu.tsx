@@ -22,6 +22,7 @@ export const Menu = () => {
                     <li><Link to="/cursos" onClick={closeMenu} className={styles.menuItem}>Cursos</Link></li>
                     <li><Link to="/formacao" onClick={closeMenu} className={styles.menuItem}>Formação</Link></li>
                     <li><Link to="/professores" onClick={closeMenu} className={styles.menuItem}>Professores</Link></li>
+                    <li><Link to="/software" onClick={closeMenu} className={styles.menuItem}>Software</Link></li>
                 </ul>
             </div>
         </div> : 
