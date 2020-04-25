@@ -31,7 +31,8 @@ const IndexPage = ({ data }) => {
           <CardImage 
             text="A Livraria da Regulus possui um dos maiores acervos de títulos sobre Astrologia, incluído muitos títulos esgotados e raros."
             title="Livraria"
-            image={getImage(images, "livros.png")} />
+            image={getImage(images, "livros.png")}
+            externalLink="http://www.livrariadaregulus.com.br" />
           <CardImage 
             text="Confira nossa grade curricular!"
             title="Formação"

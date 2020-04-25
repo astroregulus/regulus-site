@@ -4,10 +4,11 @@ import styles from "./card-image.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 interface Props {
-    image: any,
-    text: string,
-    title: string,
-    navigateTo: string
+    image: any
+    text: string
+    title: string
+    navigateTo?: string
+    externalLink?: string
 }
 
 const estiloDiv: Partial<CSSProperties> = {
@@ -16,16 +17,14 @@ const estiloDiv: Partial<CSSProperties> = {
     position: "absolute",
     bottom: "5px", 
     width: "35%",
-    // borderTopRightRadius: "8px",
-    // borderBottomRightRadius: "8px",
-        
     color: "white",
-
     padding: "5px",
 }
 
 export const CardImage = (props: Props) => {
-    return <div className={styles.card} onClick={() => navigate(props.navigateTo)}> 
+    const onClick = props.navigateTo    ? () => navigate(props.navigateTo!)
+                                        : () => window.open(props.externalLink, "_blank");
+    return <div className={styles.card} onClick={onClick}> 
                 <div style={{position: "relative"}}>
                     <div style={estiloDiv}>
                         <p>{props.title}</p>
