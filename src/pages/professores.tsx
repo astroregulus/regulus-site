@@ -3,23 +3,27 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styles from "./professores.module.css"
 import { graphql } from "gatsby"
+import { ProfessoresQueryQuery } from "../../graphql-types"
 
 
-const getImage = (edges: any[], photoFile: string) : string => {
+const getImage = (edges: any[], photoFile?: string | null) : string => {
   const index = edges.findIndex( 
    ({node}: any) => `${node.name}${node.ext}` === photoFile);
   return index < 0 ? "" : edges[index].node.childImageSharp.resize.src;
 }
 
-const ProfessoresPage = ({data} : any) => {
+const ProfessoresPage = ({data} : {data: ProfessoresQueryQuery}) => {
   const professores = data.allProfessoresJson.edges;
   const fotos = data.allFile.edges;
 
   return  <Layout>
             <SEO title="Profesores" />
             <h1>Professores da Escola</h1>
-            {professores.map(({node}: any) => 
-              <Professor key={node.id} {...node} foto={getImage(fotos, node.foto)}/>
+            {professores.map(({node}) => 
+              <Professor  key={node.id}
+                          nome={node.nome!}
+                          bio={node.bio!}
+                          foto={getImage(fotos, node.foto)}/>
               )}
           </Layout>
 };
