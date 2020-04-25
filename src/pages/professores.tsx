@@ -3,12 +3,9 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styles from "./professores.module.css"
 import { graphql } from "gatsby"
-import { ProfessoresQueryQuery , ImageSharpResize, Maybe, File} from "../../graphql-types"
+import { ProfessoresQueryQuery } from "../../graphql-types"
 
-type Edges = Array<{ node: (
-                    Pick<File, 'name' | 'ext'>
-                    & { childImageSharp?: Maybe<{ resize?: Maybe<Pick<ImageSharpResize, 'src'>> }> }
-                  ) }>;
+type Edges = ProfessoresQueryQuery['allFile']['edges'];
 
 const getImage = (edges: Edges, photoFile?: string | null) : string => {
   const index = edges.findIndex( 
