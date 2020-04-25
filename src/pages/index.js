@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import {CardImage} from "../components/card-image"
 import styles from "./index.module.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const estiloCards = {
   display: "flex",
@@ -45,6 +46,14 @@ const IndexPage = ({ data }) => {
         <p>Rua Estela, 515 cj.71 - Bl. E - próximo ao Metrô Paraíso</p>
         <iframe width="100%" height="300" frameBorder="0" style={{border: 0}} title="mapa" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJsWC2m5FZzpQRndvYvoxUM08&key=AIzaSyA9pQxGOAOAkZz5mu5kT0BFRghJ1Cqt478" allowFullScreen></iframe> 
         <p>São Paulo/SP | 04011-904</p>
+      </div>
+
+      <div className={styles.sessao}>
+        <FontAwesomeIcon icon={["fas","quote-right"]} size="2x" />
+        <div className={styles.citacao}>
+          <p>O céu ganhou mais uma estrela, e a terra se acostuma com a saudade.</p>
+          <p>Prof.Waldyr Bonadei Fücher - 18/08/1926 ~19/02/2012 </p>
+        </div>
       </div>
   </Layout>
 )}

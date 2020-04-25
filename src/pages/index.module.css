@@ -12,6 +12,14 @@
     text-align: justify;
 }
 
+.citacao {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-style: italic;
+    padding: 10px 0;
+}
+
 .botao {
     border:1px solid #011830;
     color:#011830;
