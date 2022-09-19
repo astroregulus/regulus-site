@@ -3,13 +3,15 @@ module.exports = {
   content: ['./*.html'],
   theme: {
     fontFamily: {
-      'body': ['Lato', 'sans-serif'],
-      'menu': ['Roboto'],
+      'lato': ['Lato', 'sans-serif'],
+      'roboto': ['Roboto'],
     },
     extend: {
       colors: {
         blue: {
           100: '#F4FAFF',
+          600: '#204B78',
+          800: '#072748',
           regulus: '#011830'
         },
       },
