@@ -1,16 +1,15 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8"/>
     <title>Regulus | Escola de Astrologia</title>
     <link rel="stylesheet" href="./dist/output.css" type="text/css" media="screen" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-  <body class="bg-blue-100">
-    <div class="flex items-center justify-between mt-7 mx-16">
+  <body class="bg-blue-100 font-roboto">
+    <div class="flex items-center justify-center sm:justify-between mt-7 mx-16">
       <h1 class="text-4xl font-lato uppercase"> Regulus </h1>
-      <nav>
+      <nav class="hidden sm:block">
         <ul class="flex space-x-4 font-toboto text-lg">
           <li>Cursos</li>
           <li>Livraria</li>
@@ -24,7 +23,7 @@
       <!-- Painel principal -->
       <div class="text-center mx-auto max-w-7xl px-4 pb-20">
         <p class="font-black font-roboto text-6xl tracking-tight">Estude Astrologia <span class="text-blue-regulus">de verdade</span></p>
-        <p class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xls">Ensinando e formando astrólogos desde 1975. Formação completa em Astrologia, cursos básicos, intermediários e avançados.</p>
+        <p class="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-2xl">Ensinando e formando astrólogos desde 1975. Formação completa em Astrologia, cursos básicos, intermediários e avançados.</p>
         <div class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
             <button class="shadow w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-regulus hover:bg-sky-900 md:py-4 md:text-lg md:px-10">Veja as turmas</button>
             <button class="sm:ml-3 shadow w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-regulus bg-white hover:bg-sky-200 md:py-4 md:text-lg md:px-10">Grade curricular</button>
@@ -33,19 +32,19 @@
       <!-- Painel principal -->
       <!-- Painel Livraria -->
       <div class="bg-blue-800 mx-auto max-w-7xl px-4 py-10">
-        <div class="mx-36 pb-24">
+        <div class="sm:mx-36 sm:pb-24">
           <h2>
-            <span class="text-blue-600 uppercase font-lato text-4xl font-bold">Livraria</span>
+            <span class="text-blue-600 uppercase font-roboto text-3xl sm:text-4xl font-bold">Livraria</span>
             <br>
-            <span class="text-blue-100 text-6xl font-lato font-bold">especializada e online.</span>
+            <span class="text-blue-100 text-5xl sm:text-6xl font-roboto font-bold">especializada e online.</span>
           </h2>
-          <div class="grid grid-cols-3 font-lato text-blue-100 mt-14 justify-between">
-            <div class="col-span-2 max-w-lg relative text-xl">
+          <div class="grid grid-flow-row gap-5 sm:gap-0 sm:grid-cols-3 font-lato text-blue-100 mt-14 justify-between">
+            <div class="sm:col-span-2 max-w-lg relative text-xl">
               <p>A Livraria da Regulus nasceu da necessidade de atender os alunos dos cursos de Astrologia.</p>
               <br>
               <p>Hoje a Livraria física possui um dos maiores acervos de títulos sobre Astrologia, incluído muitos títulos esgotados e raros.</p>
               <br>
-              <div class="font-roboto text-2xl">
+              <div class="hidden sm:block font-roboto text-xl sm:text-2xl">
                 <p>Informações sobre conteúdo da livraria</p>
                 <ul>
                   <li>Categorias</li>
@@ -54,33 +53,33 @@
                   <li>Importados</li>
                 </ul>
               </div>
-              <button class="leading-tight text-lg mt-10 shadow flex items-center justify-center px-5 py-2.5 border border-transparent font-semibold rounded-md text-blue-regulus bg-white hover:bg-sky-200">Ir para livraria</button>
+              <button class="hidden sm:flex leading-tight text-lg mt-10 shadow items-center justify-center px-5 py-2.5 border border-transparent font-semibold rounded-md text-blue-regulus bg-white hover:bg-sky-200">Ir para livraria</button>
             </div>
-            <div class="grid grid-cols-2 gap-10 justify-items-end">
-              <img class="w-40" src="./dist/img/livraria_1.jpg" alt="">
-              <img class="w-40" src="./dist/img/livraria_2.jpg" alt="">
-              <img class="w-40" src="" alt="">
-              <img class="w-40" src="./dist/img/livraria_3.jpg" alt="">
+            <div class="flex flex-row overflow-y-scroll gap-5 sm:grid sm:grid-cols-2 sm:gap-10 sm:justify-items-end">
+              <img class="w-32 sm:w-40" src="./dist/img/livraria_1.jpg" alt="">
+              <img class="w-32 sm:w-40" src="./dist/img/livraria_2.jpg" alt="">
+              <img class="w-32 sm:w-40" src="./dist/img/livraria_3.jpg" alt="">
             </div>
+            <button class="sm:hidden leading-tight text-lg mt-10 shadow flex items-center justify-center px-5 py-2.5 border border-transparent font-semibold rounded-md text-blue-regulus bg-white hover:bg-sky-200">Ir para livraria</button>
           </div>
         </div> 
       </div>
       <!-- Painel Livraria -->
       <!-- Painel Formação -->
       <div class="mx-auto max-w-7xl px-4 py-10">
-        <div class="mx-36 pb-24 relative">
+        <div class="sm:mx-36 sm:pb-24 relative">
           <h2>
-            <span class="text-blue-600 uppercase font-lato text-4xl font-bold">Livraria</span>
+            <span class="text-blue-600 uppercase font-roboto text-3xl sm:text-4xl font-bold">Formação</span>
             <br>
-            <span class="text-blue-800 text-6xl font-lato font-bold">especializada e online.</span>
+            <span class="text-blue-800 text-5xl sm:text-6xl font-roboto font-bold">completa e livre.</span>
           </h2>
-          <p class="mt-14 font-roboto text-blue-800 text-2xl max-w-md">Nossa grade curricular atende a CBO (Classificação Brasileira de Ocupações) e os currículos de referência de entidades nacionais e internacionais.</p>
-          <div class="-mt-32 flex justify-between items-end">
+          <p class="mt-14 text-center sm:text-left font-roboto text-blue-800 text-xl sm:text-2xl max-w-md">Nossa grade curricular atende a CBO (Classificação Brasileira de Ocupações) e os currículos de referência de entidades nacionais e internacionais.</p>
+          <div class="mt-5 sm:-mt-32 flex justify-center sm:justify-between items-end">
             <button class="max-h-10 shadow flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-regulus hover:bg-sky-900 md:py-4 md:text-lg md:px-10">Veja a grade</button>
-            <img class="max-w-2xl -z-50" src="./dist/img/undraw_road_to_knowledge.png" alt="">
+            <img class="hidden sm:block max-w-2xl -z-50" src="./dist/img/undraw_road_to_knowledge.png" alt="">
           </div>
-          <div class="flex justify-center items-center mt-20 space-x-9" >
-            <p class="max-w-xl font-roboto text-blue-800 text-2xl">A ocupação “Astrólogo” é reconhecida pelo Ministério do Trabalho, e inclusive participamos da elaboração.</p>
+          <div class="flex flex-col sm:flex-row justify-center items-center mt-10 sm:mt-20 space-y-5 sm:space-x-9" >
+            <p class="max-w-xl text-center sm:text-left font-roboto text-blue-800 text-xl sm:text-2xl">A ocupação “Astrólogo” é reconhecida pelo Ministério do Trabalho, e inclusive participamos da elaboração.</p>
             <button class="max-h-10 shadow flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-regulus hover:bg-sky-900 md:py-4 md:text-lg md:px-10">Saiba mais</button>
           </div>
         </div>
@@ -88,8 +87,8 @@
       <!-- Painel Formação -->
       <!-- Rodapé -->
       <footer class="bg-blue-regulus text-blue-100 max-w-7xl px-4 py-10"> 
-        <div class="mx-36 pb-24" >
-          <div class="grid grid-cols-3 justify-items-center">
+        <div class="s:mx-36 sm:pb-24" >
+          <div class="grid grid-rows-3 sm:grid-cols-3 justify-items-center">
             <div>
               <p>Rua Estela, 515 - Bl.E - Cj.71</p>
               <p>São Paulo - SP -Brazil</p>
