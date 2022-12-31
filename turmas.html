@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="pt-br" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Regulus | Escola de Astrologia</title>
+  <link rel="stylesheet" href="./dist/output.css" type="text/css" media="screen" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="bg-blue-100 font-roboto">
+  <div id="mobile-menu" class="hidden inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden">
+    <div class="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+      <div class="px-5 pt-5 pb-6">
+        <div class="flex items-center justify-between">
+          <div>
+            <img class="h-8 w-auto" src="./dist/img/logo_junta.png" alt="Regulus">
+          </div>
+          <div class="-mr-2">
+            <button id="menu-close" type="button"
+              class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+              <span class="sr-only">Close menu</span>
+              <!-- Heroicon name: outline/x-mark -->
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="mt-6">
+          <nav class="grid gap-y-8">
+            <a href="https://www.regulus.com.br/curso/inicio.htm" target="_blank" rel="noopener noreferrer" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50">
+              <!-- Heroicon name: outline/calendar -->
+              <svg class="h-6 w-6 flex-shrink-0 text-blue-regulus" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+              </svg>
+
+              <span class="ml-3 text-base font-medium text-gray-900">Cursos</span>
+            </a>
+
+            <a href="#livraria" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50">
+              <!-- Heroicon name: outline/book-open -->
+              <svg class="h-6 w-6 flex-shrink-0 text-blue-regulus" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+              </svg>
+              <span class="ml-3 text-base font-medium text-gray-900">Livraria</span>
+            </a>
+
+            <a href="#formacao" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50">
+              <!-- Heroicon name: outline/academic-cap -->
+              <svg class="h-6 w-6 flex-shrink-0 text-blue-regulus" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
+              </svg>
+              <span class="ml-3 text-base font-medium text-gray-900">Formação</span>
+            </a>
+
+            <a href="#" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50">
+              <!-- Heroicon name: outline/information-circle -->
+              <svg class="h-6 w-6 flex-shrink-0 text-blue-regulus" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z" />
+              </svg>
+              <span class="ml-3 text-base font-medium text-gray-900">Sobre</span>
+            </a>
+
+            <a href="#" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50">
+              <!-- Heroicon name: outline/envelope -->
+              <svg class="h-6 w-6 flex-shrink-0 text-blue-regulus" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+              </svg>
+              <span class="ml-3 text-base font-medium text-gray-900">Contato</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+      <div class="space-y-6 py-6 px-5">
+        <div class="grid grid-cols-2 gap-y-4 gap-x-8">
+          <a href="https://www.regulus.com.br/softwares/pegasus.htm" target="_blank" rel="noopener noreferrer" class="text-base font-medium text-gray-900 hover:text-gray-700">Software</a>
+
+          <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">Professores</a>
+
+          <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">Serviços</a>
+
+          <!-- <a href="#" class="text-base font-medium text-gray-900 hover:text-gray-700">Acesso aluno</a> -->
+        </div>
+        <div>
+          <p class="mt-6 text-center text-base font-medium text-gray-500">
+            Já é aluno?
+            <a href="https://www.regulus.com.br/moodle" target="_blank" rel="noopener noreferrer" class="text-blue-regulus hover:text-indigo-500">Acesse a plataforma</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex items-center justify-between px-4 mt-7 mx-auto max-w-7xl">
+    <h1 class="text-4xl font-lato uppercase"> Regulus </h1>
+    <nav class="hidden sm:block">
+      <ul class="flex space-x-4 font-toboto text-lg">
+        <li>Cursos</li>
+        <li><a href="#livraria">Livraria</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li>Sobre</li>
+        <li>Contato</li>
+      </ul>
+    </nav>
+    <div class="-my-2 -mr-2 sm:hidden">
+      <button type="button" id="menu-open"
+        class="inline-flex items-center justify-center rounded-mdp-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+        aria-expanded="false">
+        <span class="sr-only">Open menu</span>
+        <!-- Heroicon name: outline/bars-3 -->
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+          stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <main class="mt-10 sm:mt-24">
+    <!-- Banner -->
+    <div id="banner" class="bg-blue-800 mx-auto max-w-full px-4 py-10">
+      <div class="sm:mx-36 sm:pb-24">
+        <h2>
+          <span class="text-blue-600 uppercase font-roboto text-3xl sm:text-4xl font-bold">Escolha o melhor para você</span>
+          <br>
+          <span class="text-blue-100 text-5xl sm:text-6xl font-roboto font-bold">nossos cursos.</span>
+        </h2>
+      </div>
+    </div>
+    <!-- Banner -->
+    <!-- Turmas -->
+    <div id="turmas" class="px-2 text-white mt-5">
+      <div class="bg-blue-600 p-2 flex flex-col">
+        <h2 class="font-roboto text-2xl font-bold">ProLuNa</h2>
+        <p class="font-roboto text-base">Previsão pelas idades do homem</p>
+        <div class="mt-8">
+          <p><span class="font-bold">Início:</span> 01 de Novembro</p>
+          <p><span class="font-bold">Horário:</span> 19h30 - 21h30</p>
+          <p><span class="font-bold">Duração:</span> 1 mês - aulas semanais de 2 horas</p>
+          <p><span class="font-bold">Valor:</span> R$ 341,00 por mês</p>
+        </div>
+        <p class="ml-auto text-blue-400">+ mais informações</p> 
+      </div>
+    </div>
+    <!-- Turmas -->
+    <!-- Painel FAQ -->
+    <div id="faq" class="mx-auto max-w-full px-4 py-10">
+      <div class="sm:mx-36 sm:pb-24 relative">
+        <h2>
+          <span class="text-blue-600 uppercase font-roboto text-3xl sm:text-4xl font-bold">FAQ</span>
+          <br>
+          <span class="text-blue-800 text-5xl sm:text-6xl font-roboto font-bold">perguntas frequentes.</span>
+        </h2>
+      </div>
+      <div class="space-y-2 mt-2">
+        <details class="group" open>
+          <summary
+            class="text-blue-500 group-open:text-green-500 list-none flex items-center justify-between hover:cursor-pointer"
+          >
+          <p class="text-blue-regulus font-bold max-w-xs">Os cursos estão sendo online ou presencial?</p>
+            <span class="group-open:hidden">
+              <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="2" width="2" height="16" transform="rotate(-90 0 2)" fill="#FF8038"/>
+              </svg>              
+            </span>
+            <span class="hidden group-open:inline">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="7" width="2" height="16" fill="#FF8038"/>
+                <rect y="9" width="2" height="16" transform="rotate(-90 0 9)" fill="#FF8038"/>
+              </svg>              
+            </span>
+          </summary>
+          <p class="text-sm">No momento as aulas são ao vivo, com transmissão direta, permitindo a interatividade dos alunos e professor. Não é aula pré gravada. 
+  Estamos avaliando o interesse dos alunos e COVID para planejar novas turmas presenciais.</p>
+        </details>
+        <details class="group open:ring">
+          <summary
+            class="text-blue-500 group-open:text-green-500 list-none flex justify-between items-center hover:cursor-pointer"
+          >
+          <p class="text-blue-regulus font-bold max-w-xs">Por onde são transmitidas as aulas?</p>
+            <span class="group-open:hidden">
+              <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="2" width="2" height="16" transform="rotate(-90 0 2)" fill="#FF8038"/>
+              </svg>              
+            </span>
+            <span class="hidden group-open:inline">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="7" width="2" height="16" fill="#FF8038"/>
+                <rect y="9" width="2" height="16" transform="rotate(-90 0 9)" fill="#FF8038"/>
+              </svg>              
+            </span>
+          </summary>
+          <p class="text-sm">Através do Zoom.</p>
+        </details>
+      </div>
+    </div>
+    <!-- Painel FAQ -->
+    <!-- Rodapé -->
+    <footer class="bg-blue-regulus text-blue-100 max-w-full px-4 py-10">
+      <div class="s:mx-36 sm:pb-24">
+        <div class="grid grid-rows-3 sm:grid-rows-1 sm:grid-cols-3 justify-items-center">
+          <div>
+            <p>Rua Estela, 515 - Bl.E - Cj.71</p>
+            <p>São Paulo - SP -Brazil</p>
+            <p><a href="tel:+551155492655">+55 (11) 5549-2655</a> após as 14h</p>
+            <p><a href="mailto:astrologia@regulus.com.br">astrologia@regulus.com.br</a></p>
+          </div>
+          <div>
+            <ul>
+              <li><a href="https://www.instagram.com/regulus.astrologia/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+              <li><a href="https://twitter.com/astroregulus/" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+              <li><a href="https://www.youtube.com/user/astrologiaregulus" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+              <li><a href="https://www.facebook.com/regulus.cursos" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            </ul>
+          </div>
+          <div class="grid grid-cols-2">
+            <div>
+              <ul>
+                <li>Cursos</li>
+                <li>Formação</li>
+                <li>Sobre</li>
+                <li>Contato</li>
+              </ul>
+            </div>
+            <div>
+              <ul>
+                <li>Software</li>
+                <li>Professores</li>
+                <li>Serviços</li>
+                <li>Acesso aluno</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Rodapé -->
+  </main>
+</body>
+<script>
+  function fechaMenu() {
+    const menuMobile = document.getElementById("mobile-menu");
+    menuMobile.classList.remove("absolute")
+    menuMobile.classList.add("hidden")
+  }
+
+  function abreMenu() {
+    const menuMobile = document.getElementById("mobile-menu");
+    menuMobile.classList.remove("hidden")
+    menuMobile.classList.add("absolute")
+  }
+
+  document.getElementById("menu-close").addEventListener('click', fechaMenu);
+  document.getElementById("menu-open").addEventListener('click', abreMenu);
+</script>
+
+</html>
