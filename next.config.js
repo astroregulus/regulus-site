@@ -1,3 +1,6 @@
 /** @type {import('next').NextConfig} */
 
-module.exports = {};
+module.exports = {
+  basePath: '/arthur',
+  trailingSlash: true,
+};

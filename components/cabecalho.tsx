@@ -1,18 +1,21 @@
 import { useState } from "react";
+import { useRouter } from 'next/router';
 import MenuCelular from "./menu-celular";
+import Link from "next/link";
 
 export default function Cabecalho() {
+  const router = useRouter()
   const [menuAberto, atualizaMenu] = useState(false)
   return (
     <>
   <MenuCelular menuAberto={menuAberto} aoFechar={() => atualizaMenu(false)}/>
   <div className="flex items-center justify-between px-4 mt-7 mx-auto max-w-7xl">
-    <h1 className="text-4xl font-lato uppercase"> Regulus </h1>
+    <h1 className="text-4xl font-lato uppercase cursor-pointer" onClick={() => router.push('./')}> Regulus </h1>
     <nav className="hidden sm:block">
       <ul className="flex space-x-4 font-toboto text-lg">
-        <li><a href="./turmas.html">Cursos</a></li>
-        <li><a href="#livraria">Livraria</a></li>
-        <li><a href="#formacao">Formação</a></li>
+        <li><Link href="/turmas">Cursos</Link></li>
+        <li><Link href="#livraria">Livraria</Link></li>
+        <li><Link href="#formacao">Formação</Link></li>
         <li>Sobre</li>
         <li>Contato</li>
       </ul>
