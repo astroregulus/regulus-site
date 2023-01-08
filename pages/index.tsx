@@ -10,7 +10,6 @@ export default function HomePage() {
         <title>Regulus | Escola de Astrologia</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
       </Head>
-      <Cabecalho />
       <main className="mt-16 sm:mt-24">
     {/* <!-- Painel principal --> */}
     <div className="text-center mx-auto max-w-7xl px-4 pb-20">
@@ -115,7 +114,6 @@ export default function HomePage() {
       </div>
     </div>
     </main>
-      <Rodape />
     </div>
   );
 }
