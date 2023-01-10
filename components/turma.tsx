@@ -12,8 +12,7 @@ export default function Turma(turma: Turma) {
          <h2 className="font-roboto text-2xl font-bold">{turma.titulo}</h2>
          <p className="font-roboto text-base">{turma.subtitulo}</p>
          <div className="mt-8">
-           <p><span className="font-bold">Início:</span> {turma.inicio}</p>
-           <p><span className="font-bold">Horário:</span> {turma.horario}</p>
+           <p><span className="font-bold">Início:</span> {turma.inicio} das {turma.horario}</p>
            <p><span className="font-bold">Duração:</span> {turma.duracao}</p>
            <p><span className="font-bold">Valor:</span> {turma.valor}</p>
          </div>

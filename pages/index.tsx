@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import Cabecalho from '../components/cabecalho';
-import Rodape from '../components/rodape';
 
 export default function HomePage() {
   return (
