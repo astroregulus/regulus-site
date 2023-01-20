@@ -17,21 +17,32 @@ export default function Turmas() {
        <Turma
           titulo="ProLuNa" 
           subtitulo="Previsão pelas idades do homem" 
-          inicio="01 de Novembro"
+          inicio="01/11"
           horario="19h30 - 21h30"
           duracao="1 mês - aulas semanais de 2 horas"
-          valor="R$ 341,00 por mês" />
-       <div className="bg-blue-600 p-2 flex flex-col">
-         <h2 className="font-roboto text-2xl font-bold">ProLuNa</h2>
-         <p className="font-roboto text-base">Previsão pelas idades do homem</p>
-         <div className="mt-8">
-           <p><span className="font-bold">Início:</span> 01 de Novembro</p>
-           <p><span className="font-bold">Horário:</span> 19h30 - 21h30</p>
-           <p><span className="font-bold">Duração:</span> 1 mês - aulas semanais de 2 horas</p>
-           <p><span className="font-bold">Valor:</span> R$ 341,00 por mês</p>
-         </div>
-         <p className="ml-auto text-blue-400">+ mais informações</p> 
-       </div>
+          valor="R$ 341,00 por mês">
+        <div className="leading-tight text-sm mt-4">
+          <p>Técnica de previsão criada pelo uruguaio Boris Cristoff, destacada pela sua simplicidade em se fazer prognósticos apenas através do mapa natal.</p>
+          <ul className="list-disc list-inside">
+            <li>Etapas cronológicas / as idades do homem (casas)</li>
+            <li>As etapas psicológicas (signos)</li>
+            <li>Os acontecimentos marcados no mapa</li>
+            <li>Os impactos e desdobramentos das situações</li>
+          </ul>
+        </div>
+        </Turma>
+        <Turma
+          titulo="LILITH" 
+          subtitulo="Arquétipo e Simbolismo no Mapa Astrológico" 
+          inicio="30/01"
+          horario="19h00 - 21h00"
+          duracao="1 mês - aulas semanais de 2 horas"
+          valor="R$ 341,00">
+        <div className="leading-tight text-sm mt-4">
+          <p>A análise do posicionamento de Lilith por signos e casa.</p>
+          <p>Onde ela se encontra corresponde a área de experiência (casa) ou qualidade arquetípica (signo) em relação à qual o indivíduo vive com um sentimento inexplicável e constante de expectativa e insatisfação, mesmo que a experiência simbolizada por aquela Casa ou signo esteja sendo realizada satisfatoriamente.</p>
+        </div>
+        </Turma>
      </div>
      {/* <!-- Turmas --> */}
      {/* <!-- Painel FAQ --> */}
