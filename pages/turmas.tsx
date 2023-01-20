@@ -18,8 +18,9 @@ export default function Turmas() {
           titulo="ProLuNa" 
           subtitulo="Previsão pelas idades do homem" 
           inicio="01/11"
+          data="01/11/2022"
           horario="19h30 - 21h30"
-          duracao="1 mês - aulas semanais de 2 horas"
+          duracao="1 mês"
           valor="R$ 341,00 por mês">
         <div className="leading-tight text-sm mt-4">
           <p>Técnica de previsão criada pelo uruguaio Boris Cristoff, destacada pela sua simplicidade em se fazer prognósticos apenas através do mapa natal.</p>
@@ -35,8 +36,9 @@ export default function Turmas() {
           titulo="LILITH" 
           subtitulo="Arquétipo e Simbolismo no Mapa Astrológico" 
           inicio="30/01"
+          data="30/01/2023"
           horario="19h00 - 21h00"
-          duracao="1 mês - aulas semanais de 2 horas"
+          duracao="1 mês"
           valor="R$ 341,00">
         <div className="leading-tight text-sm mt-4">
           <p>A análise do posicionamento de Lilith por signos e casa.</p>
