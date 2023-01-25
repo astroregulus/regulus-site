@@ -1,3 +1,4 @@
+import { Professor } from "../components/imagem-professor";
 import Turma from "../components/turma";
 
 export default function Turmas() {
@@ -21,7 +22,8 @@ export default function Turmas() {
           data="01/11/2022"
           horario="19h30 - 21h30"
           duracao="1 mês"
-          valor="R$ 341,00 por mês">
+          valor="R$ 341,00 por mês"
+          professor={Professor.Leonardo}>
         <div className="leading-tight text-sm mt-4">
           <p>Técnica de previsão criada pelo uruguaio Boris Cristoff, destacada pela sua simplicidade em se fazer prognósticos apenas através do mapa natal.</p>
           <ul className="list-disc list-inside">
@@ -39,7 +41,8 @@ export default function Turmas() {
           data="30/01/2023"
           horario="19h00 - 21h00"
           duracao="1 mês"
-          valor="R$ 341,00">
+          valor="R$ 341,00"
+          professor={Professor.Nina}>
         <div className="leading-tight text-sm mt-4">
           <p>A análise do posicionamento de Lilith por signos e casa.</p>
           <p>Onde ela se encontra corresponde a área de experiência (casa) ou qualidade arquetípica (signo) em relação à qual o indivíduo vive com um sentimento inexplicável e constante de expectativa e insatisfação, mesmo que a experiência simbolizada por aquela Casa ou signo esteja sendo realizada satisfatoriamente.</p>
