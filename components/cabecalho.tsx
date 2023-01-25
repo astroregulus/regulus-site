@@ -9,7 +9,7 @@ export default function Cabecalho() {
   return (
     <>
   <MenuCelular menuAberto={menuAberto} aoFechar={() => atualizaMenu(false)}/>
-  <div className="flex items-center justify-between px-4 mt-7 mx-auto max-w-7xl">
+  <div className="flex items-center justify-between px-4 my-7 md:mx-36">
     <h1 className="text-4xl font-lato uppercase cursor-pointer" onClick={() => router.push('./')}> Regulus </h1>
     <nav className="hidden sm:block">
       <ul className="flex space-x-4 font-toboto text-lg">

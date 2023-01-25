@@ -5,11 +5,11 @@ export default function Turmas() {
   return (<>
     {/* <!-- Banner --> */}
     <div id="banner" className="bg-blue-800 mx-auto max-w-full px-4 py-10">
-      <div className="sm:mx-36 sm:pb-24">
+      <div className="md:mx-36">
         <h2>
-          <span className="text-blue-600 uppercase font-roboto text-3xl sm:text-4xl font-bold">Escolha o melhor para você</span>
+          <span className="text-blue-600 uppercase font-roboto text-3xl md:text-4xl font-bold">Escolha o melhor para você</span>
           <br />
-          <span className="text-blue-100 text-5xl sm:text-6xl font-roboto font-bold">nossos cursos.</span>
+          <span className="text-blue-100 text-5xl md:text-6xl font-roboto font-bold">nossos cursos.</span>
         </h2>
       </div>
     </div>
@@ -52,19 +52,19 @@ export default function Turmas() {
      {/* <!-- Turmas --> */}
      {/* <!-- Painel FAQ --> */}
     <div id="faq" className="mx-auto max-w-full px-4 py-10">
-      <div className="sm:mx-36 sm:pb-24 relative">
+      <div className="md:mx-36 md:pb-12 relative">
         <h2>
-          <span className="text-blue-600 uppercase font-roboto text-3xl sm:text-4xl font-bold">FAQ</span>
+          <span className="text-blue-600 uppercase font-roboto text-3xl md:text-4xl font-bold">FAQ</span>
           <br />
-          <span className="text-blue-800 text-5xl sm:text-6xl font-roboto font-bold">perguntas frequentes.</span>
+          <span className="text-blue-800 text-5xl md:text-6xl font-roboto font-bold">perguntas frequentes.</span>
         </h2>
       </div>
-      <div className="sm:mx-36 space-y-2 mt-2">
+      <div className="md:mx-36 space-y-2 mt-2 max-w-screen-md">
         <details className="group" open>
           <summary
             className="text-blue-500 group-open:text-green-500 list-none flex items-center justify-between hover:cursor-pointer"
           >
-          <p className="text-blue-regulus font-bold sm:max-w-xs">Os cursos estão sendo online ou presencial?</p>
+          <p className="text-blue-regulus font-bold md:max-w-xs">Os cursos estão sendo online ou presencial?</p>
             <span className="group-open:hidden">
               <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect y="2" width="2" height="16" transform="rotate(-90 0 2)" fill="#FF8038"/>
@@ -84,7 +84,7 @@ export default function Turmas() {
           <summary
             className="text-blue-500 group-open:text-green-500 list-none flex justify-between items-center hover:cursor-pointer"
           >
-          <p className="text-blue-regulus font-bold sm:max-w-xs">Por onde são transmitidas as aulas?</p>
+          <p className="text-blue-regulus font-bold md:max-w-xs">Por onde são transmitidas as aulas?</p>
             <span className="group-open:hidden">
               <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect y="2" width="2" height="16" transform="rotate(-90 0 2)" fill="#FF8038"/>
